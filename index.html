@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en" style='background-size: cover; background-image: url("http://i.imgur.com/j7vSy6C.jpg");'>
+    <head>
+        <meta charset="utf-8">
+        <script>
+
+          var gandy_beginnings = [
+            'marvelous',
+            'Chow E A YAY UH',
+            'flea-food',
+            'queia jute',
+            'Jai Yiya',
+            'Pia Coot',
+            'Chow Yuya Yund',
+            'Gendjahw Mc',
+            'Ghost-hunting',
+            'bathroom-staring',
+            'Jao-yaya Fjend',
+            'Fagelas',
+            'irritatd',
+            'long-toed',
+            'crimp-headed',
+            'Dr. Suess-feet',
+            'Jow Zua Dund',
+            'Mal Nua Nund',
+            'Horadric',
+            'fit-pitching',
+            'outside-wanting',
+            'osteometric',
+            'Plo Scraya Grand',
+            'Bo Craya Nand',
+            'Bo Spraya Tand',
+            'head-torquing',
+            'mixed',
+            'unmixed',
+            'pure',
+            'belly-draping',
+            'clandestine',
+            'koala-toed',
+            'stardust',
+            'rabbit-furred',
+            'sweet-feet',
+            'Piao Yua-Dund',
+            'deliciously malicious',
+            'Twaya',
+            'attractive',
+            'Sir',
+            'water-filled',
+            'cock-dusting',
+            'cocked-eared',
+            'doofy',
+            'freckle-lipped',
+            'Tandle-Grandrish',
+            'belligerent',
+            'plo',
+            'spo',
+            'lo',
+            'zo',
+            'quai laia',
+            'fabulous',
+            'ooh-ooh',
+            'excellent',
+            'Jerk-Face Mc',
+            'Bloo-yaya',
+            'Bloo',
+            'grade-A',
+            'absurd',
+            'addicting',
+            'queued',
+            'instantly chilled',
+            'trustworthy',
+            'radiant silver',
+            'universe-produced',
+            'bodacious',
+            'floatatious',
+            'glandibular',
+            'temporomandibular',
+            'Lithuanian',
+            'healing',
+            'crazy-ass',
+            'Bo',
+            'loo-maya',
+            'A1',
+            'grand old',
+            'spectacular',
+            'box-ripping',
+            'jandal-bland-a-dandum',
+            'giant',
+            'elegant',
+            'wonderful',
+            'spandecine',
+            'grandtacular',
+            'amazing',
+            'astonishing',
+            'perfect',
+            'astounding',
+            'Gandyish',
+            'dandy',
+            'poncy little',
+            'eye-catching',
+            'possed',
+            'pussed',
+            'randrilactric',
+            'just-out-of-sight',
+            'fuckless',
+            'beautiful',
+            'half-in, half-out',
+            'consistent',
+            'awesome',
+            'scandalous',
+            'Scandinavian',
+            'magical',
+            'magnificent',
+            'dazzling',
+            'breathtaking',
+            'miraculous',
+            'remarkable',
+            'sensational',
+            'splendid',
+            'phenomenal',
+            'special',
+            'stunning',
+            'outstanding',
+            'exceptional',
+            'gnarly',
+            'outlandish',
+            'tree-felling',
+            'awe-inspiring',
+            'extraordinary',
+            'Cro-ploa',
+            'Foa',
+            'Trend',
+            'Plo-toa',
+            'glorious',
+            'wondrous',
+            'groovy',
+            'stupendous',
+            'impressive',
+            'overwhelming'
+          ];
+
+          var gandy_middles = [
+            'Grand',
+            'Clyand',
+            'cho Dandums Mandle Fland',
+            'Chand',
+            'Chind',
+            'Hand',
+            'Zend',
+            'Thund',
+            'Chund',
+            'Kend',
+            'Brund',
+            'Pend',
+            'Boo Skland',
+            'Spend',
+            'no loa Yund',
+            'Gyand',
+            'Spund',
+            'Shand',
+            'Twind',
+            'Quind',
+            'Quand',
+            'Crand',
+            'Rend',
+            'Mend',
+            'Mnend',
+            'Nend',
+            'Yand',
+            'Plend',
+            'Lend',
+            'Slend',
+            'Trand',
+            'Scund',
+            'Spand',
+            'Fund',
+            'Bland',
+            'Shund',
+            'Pland',
+            'Pand',
+            'Tund',
+            'Skand',
+            'Yund',
+            'Trund',
+            'Brend',
+            'Gand',
+            'Gund',
+            'Gland',
+            'Glund',
+            'Trand',
+            'Tand',
+            'Wend',
+            'Kand',
+            'Wand',
+            'Fand',
+            'Cland',
+            'Fnand',
+            'Fnend',
+            'Clund',
+            'Nund',
+            'Spland',
+            'Snind',
+            'Splund',
+            'Nand',
+            'Dand',
+            'Bund',
+            'Grund',
+            'Fland',
+            'Jund',
+            'Jand',
+            'Spund',
+            'Blund',
+            'Stund',
+            'Rand',
+            'Piand',
+            'Strund',
+            'Strand',
+            'Flund',
+            'Pudend',
+            'Squind',
+            'Zand',
+            'Nand',
+            'Mund',
+            'Sland',
+            'Dend',
+            'Fmund',
+            'Tland',
+            'Fjund',
+            'Drand',
+            'Fjand',
+            'Schlend',
+            'Dund',
+            'Shrund',
+            'Potend',
+            'Shrand',
+            'Slund',
+            'Drund',
+            'Smund',
+            'Zund',
+            'Quind',
+            'Schmund',
+            'Sand',
+            'Nua Nund',
+            'Spewdend',
+            'Gend',
+            'Sund',
+            'Frand',
+            'Biend',
+            'Mand',
+            'Schplund',
+            'Skundle Zund',
+            'Nundle Tund',
+            'Blanda Gland'
+          ];
+
+          var gandy_ends = [
+            'ilini',
+            'rozil',
+            'ums',
+            'les',
+            'ie',
+            'alingus',
+            'renad',
+            'lesloot',
+            'le Butt',
+            'lefloot',
+            'eloot',
+            'lesnoot',
+            'em McNindle-Snoot',
+            'lehat',
+            'letrout',
+            'letot',
+            'um Jute',
+            'em Slout',
+            'letote',
+            'leslot',
+            'lezlot',
+            'um Krind',
+            'leclute',
+            'umzloot',
+            'riactyl',
+            'y',
+            'inide',
+            'onite',
+            'riole',
+            'letex',
+            'emtwit',
+            'riloat',
+            'iloat',
+            'risote',
+            'rilsot',
+            'riltote',
+            'riotic fluid',
+            'riltot',
+            'rogen',
+            'rium',
+            'inium',
+            'esium',
+            'ry',
+            'ryllos',
+            'erosa',
+            'jaw',
+            'jah',
+            'rose',
+            'lefruit',
+            'emfruit',
+            'emloot',
+            'emtoot',
+            'letoot',
+            'lenute',
+            'emnoot',
+            'lejute',
+            'hamtide',
+            'emjute',
+            'onide',
+            'riot',
+            'riott',
+            'riatic sea',
+            'riotics',
+            'ilundix',
+            'ybdenom',
+            'ite',
+            'legrax',
+            'onese',
+            'on',
+            'ron',
+            'rius',
+            'risil',
+            'opholes',
+            'riox',
+            'ox',
+            'riak',
+            'riok',
+            'rax',
+            'oke',
+            'em dund',
+            'em nund',
+            'ote',
+            'rox',
+            'iliumptious',
+            'emdoot',
+            'rinil',
+            'enyl',
+            'icil',
+            'riums',
+            'ricillin',
+            'lechrist',
+            'isplundrix',
+            'ribriole',
+            'lezot',
+            'ject',
+            'ryllium',
+            'yllion',
+            'lehoot',
+            'yllios',
+            'jects',
+            'jection',
+            'erex',
+            'elex',
+            'lequat',
+            'letwat',
+            'olyak',
+            'ilina',
+            'eluna',
+            'letini',
+            'ice',
+            'jaw MacSnindem Snoot',
+            'jaw Whacks Mandem coot',
+            'jaw MickSnindem Krend',
+            'dix tlactendem tloot',
+            'ilundigus',
+            'emschlitz',
+            'elous',
+            'emquat',
+            'inalt',
+            'elandex',
+            'iculitis',
+            'ilitis',
+            'ilosis',
+            'elundies',
+            'elundy',
+            'eloctrix',
+            'le Trund',
+            'ris Scund',
+            'em Dund',
+            'ril clute',
+            'um Nund',
+            'ix Mund',
+            'rum Fund',
+            'remcrute',
+            'elactrix',
+            'gelina',
+            'geline',
+            'zlebar',
+            'rilshrute',
+            'rishroot',
+            'elabra',
+            'elactric',
+            'elactical Fnand',
+            'eglot',
+            'ix',
+            'leplex',
+            '-a-gloot',
+            'emcoot',
+            'lecoot',
+            'leglute',
+            'ezoot',
+            'le plexus',
+            'ilinies',
+            'ilingie',
+            'rinault',
+            'aglundums',
+            'leblundie',
+            'ledandies',
+            'letandies',
+            'ablundums',
+            'je',
+            'icus',
+            'ledrundicus',
+            'elix',
+            'anundy',
+            'am wing',
+            'ike',
+            'lebund',
+            'lebundy',
+            'legrundy',
+            'legrundums',
+            'aglandrums',
+            'ablini',
+            'lecrot',
+            'lecrat',
+            'lecroat',
+            'us',
+            'legrot',
+            'legoot',
+            'anundums',
+            'lejandies',
+            'ibular Fandrix',
+            'aglini',
+            'aglandems',
+            'elbrot',
+            'ilandrix',
+            'rums',
+            'ondroit',
+            'lezund from Fundusville',
+            'lewhit',
+            'ums waya hoot',
+            'le craya goot',
+            'um toot',
+            'le Nandies of Ayaya Town',
+            'rex',
+            'iclundicus',
+            'iculous Mundles',
+            'lemundies',
+            'arin Orange',
+            'ioli',
+            'olide',
+            'olin',
+            'zax',
+            'zedrex',
+            'lelide',
+            'lelize',
+            'le Thlandums',
+            'ymium',
+            'rilina',
+            'rilide',
+            'rilyle',
+            'rilous',
+            'rilix',
+            'lehands',
+            'lehide',
+            'emhoot',
+            'emtruit',
+            'emsloot',
+            'le burger',
+            'jelactical',
+            'y-lion',
+            'leheim',
+            'emtand',
+            'lebland',
+            'leblandies',
+            'ice Plandecine from Grundleville',
+            'lethlax',
+            'anundigris',
+            'zedrini',
+            'olph',
+            'ophile',
+            'opholous',
+            'zledrandrix',
+            'leland',
+            'us Spundletrand of Nandus Town',
+            'rilfund',
+            'zix',
+            'icide',
+            'rinide',
+            'rinile',
+            'icine',
+            'icini',
+            'ite of Fundbury',
+            'us Bo Drandus from the sleepy town of Scundsburg',
+            'zledandies',
+            'letrand',
+            'ums of Scundale',
+            'elot',
+            'rionix',
+            'famil',
+            'opolis',
+            'rilose',
+            'rigal Bo Snandigus of Nandheim',
+            'riel',
+            'azini',
+            'rinolt',
+            'rix',
+            'ex',
+            'eh',
+            'zadandrex',
+            'ibular Jandletandice',
+            'ibulous Plandrex',
+            'igus Grundlenundies',
+            'le Trundies'
+          ];
+
+          var backgrounds = [
+            'http://imgur.com/2M42KBy.jpg',
+            'http://imgur.com/QbmLj7R.jpg',
+            'http://imgur.com/j3tEcpz.jpg',
+            'http://imgur.com/qzWMWKc.jpg',
+            'http://imgur.com/E6rxmSK.jpg',
+            'http://imgur.com/AZSWZ3x.jpg',
+            'http://imgur.com/M5NKOTt.jpg',
+            'http://imgur.com/MV27nYG.jpg',
+            'http://imgur.com/7UwL0ES.jpg',
+            'http://imgur.com/kkU5GIL.jpg',
+            'http://imgur.com/gqWPkJh.jpg',
+            'http://imgur.com/hqe7JoN.jpg',
+            'http://imgur.com/JiOLghv.jpg',
+            'http://imgur.com/iMhNy7h.jpg',
+            'http://imgur.com/slsqAHM.jpg'
+          ];
+
+          random_between = function(from,to) {
+            return Math.floor(Math.random() * (to - from + 1)) + from;
+          };
+
+          randomize = function() {
+            document.getElementById('tbx_1').value = random_between(1, gandy_beginnings.length);
+            document.getElementById('tbx_2').value = random_between(1, gandy_middles.length);
+            document.getElementById('tbx_3').value = random_between(1, gandy_ends.length);
+
+            var lbl = document.getElementById('lbl_result');
+            if(random_between(1,10) === 1) {
+                var ayaya = 'Ayaya';
+                var suffix = '';
+                switch(random_between(1,6)) {
+                    case 1:
+                        suffix = ' Fund';
+                        break;
+                    case 2:
+                        suffix = ' Grund';
+                        break;
+                    case 3:
+                        suffix = ' Tan';
+                        break;
+                    case 4:
+                        suffix = ' Nandicles';
+                        break;
+                    case 5:
+                        suffix = ' Nandletide';
+                        break;
+                    case 6:
+                        suffix = ' Nandis';
+                        break;
+                    case 7:
+                        suffix = ' Fnand';
+                        break;
+                }
+                lbl.innerHTML = ayaya + suffix + '!';
+            } else {
+                display_result();
+            }
+          };
+
+          display_result = function() {
+            var tbx_1 = document.getElementById('tbx_1');
+            var tbx_2 = document.getElementById('tbx_2');
+            var tbx_3 = document.getElementById('tbx_3');
+
+            var lbl = document.getElementById('lbl_result');
+
+            try {
+
+              var n_1 = parseInt(tbx_1.value) || -1;
+              var n_2 = parseInt(tbx_2.value) || -1;
+              var n_3 = parseInt(tbx_3.value) || -1;
+
+              if(n_1 < 0 || n_1 > gandy_beginnings.length)
+                throw 'first number must be between 0 and ' + gandy_beginnings.length;
+              if(n_2 < 0 || n_2 > gandy_middles.length)
+                throw 'second number must be between 0 and ' + gandy_middles.length;
+              if(n_3 < 0 || n_3 > gandy_ends.length)
+                throw 'third number must be between 0 and ' + gandy_ends.length;
+
+              var name = [gandy_beginnings[n_1 - 1], ' ', gandy_middles[n_2 - 1], gandy_ends[n_3 - 1]].join('');
+
+              var f = gandy_beginnings[n_1 - 1][0].toLowerCase();
+              var first_letter_is_vowel = (f === 'a' || f === 'e' || f === 'i' || f === 'o' || f === 'u');
+
+              lbl.innerHTML = "He's " + (first_letter_is_vowel ? 'an' : 'a') + " " + name + "!";
+
+            } catch (err) {
+
+              lbl.innerHTML = err;
+            }
+          };
+
+          window.onload = function() {
+            document.getElementById('tbx_1').setAttribute('placeholder', [0,gandy_beginnings.length].join('-'));
+            document.getElementById('tbx_2').setAttribute('placeholder', [0,gandy_middles.length].join('-'));
+            document.getElementById('tbx_3').setAttribute('placeholder', [0,gandy_ends.length].join('-'));
+            document.getElementsByTagName('html')[0].style.backgroundImage =
+                "background-size: cover; background-image: url('http://i.imgur.com/oJAiHTD.jpg'";
+          };
+        </script>
+    </head>
+    <body style='margin-left:auto; margin-right: auto; width: 100%;'>
+      <label
+        id='lbl_result'
+        style='color: white; font-size: 64px; display: block; text-align: center; padding-top: 3%;'>He's a...
+      </label>
+      <div style='margin-left: auto; margin-right: auto; width: 600px; margin-top: 33%;'>
+          <input
+            id='tbx_1'
+            oninput='display_result()'
+            placeholder='First number'
+            style='font-size:28px; width: 32%; text-align: center;'
+          />
+          <input
+            id='tbx_2'
+            oninput='display_result()'
+            placeholder='Second number'
+            style='font-size:28px; width: 32%; text-align: center;'
+          />
+          <input
+            id='tbx_3'
+            oninput='display_result()'
+            placeholder='Third number'
+            style='font-size:28px; width: 32%; text-align: center;'
+          />
+          <input id='randomize'
+            type='button'
+            onclick='randomize()'
+            value='GANDOMIZER'
+            style='font-size:28px; width: 100%;'
+          />
+      </div>
+    </body>
+</html>
